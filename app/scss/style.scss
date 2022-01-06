@@ -56,6 +56,7 @@ header {
 	top: 0;
 	display: none;
 	align-items: center;
+	cursor: pointer;
 	span{
 		display: block;
 		width: 48px;
@@ -64,17 +65,21 @@ header {
 		margin: 12px 0;	
 	}
 }
+.menu__mob:hover span{
+	background-color: #e1cbb0;
+	
+	transition: all .5s;
+}
 
 .menu > li {
 	display: inline-block;
-	margin: 24px 0;
 	&+li {
 		margin-left: 31px;
 	}
 }
 
 .menu li a:hover {
-	color: #fed136;
+	color: #e1cbb0;
 	transition: color .3s;
 
 }
@@ -83,8 +88,13 @@ header {
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 14px;
-
+	padding: 24px 0;
+	// display: inline-block;
+	// width: 100%;
+	
 }
+
+
 .news{
 	position: relative;
 	&__drop{
@@ -127,7 +137,7 @@ h1 {
 	text-transform: uppercase;
 	text-align: center;
 	margin: 25px;
-
+	font-weight: 500;
 }
 
 // .button {
@@ -845,5 +855,5 @@ hr {
 	}
 }
 
-
+//========================================
 @import 'media';
